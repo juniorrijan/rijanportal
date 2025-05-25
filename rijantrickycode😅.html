@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Portal – A Tribute to Inspiration by my brother</title>
+  </head>
+   
+  <body style="
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(120deg, #000000, #0f0c29, #302b63, #24243e);
+    background-size: 600% 600%;
+    animation: spaceAnimation 20s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+    color: white;
+  ">
+    
+    <div style="
+      padding: 40px;
+      border-radius: 30px;
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 50px rgba(0,255,255,0.3), 0 0 100px rgba(0,255,255,0.2);
+      backdrop-filter: blur(10px);
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      transform: perspective(1000px) rotateX(10deg) rotateY(10deg);
+      transition: all 1s ease;
+    "
+    onmouseover="this.style.transform='scale(1.05) rotateX(0deg) rotateY(0deg)'"
+    onmouseout="this.style.transform='perspective(1000px) rotateX(10deg) rotateY(10deg)'"
+    >
+      
+      <h1 style="
+        font-size: 48px;
+        margin-bottom: 20px;
+        text-shadow: 0 0 10px cyan, 0 0 30px blue;
+      ">
+        🌌 Welcome to The Portal 🌌
+      </h1>
+
+      <p style="
+        font-size: 20px;
+        color: #e0f7fa;
+        text-shadow: 0 0 5px #00ffff;
+        margin-bottom: 30px;
+      ">
+        You've just stepped into a universe powered by pure HTML and creativity.<br>
+        No JavaScript. Just design.
+      </p>
+
+      <a href="#" style="
+        padding: 15px 30px;
+        font-size: 18px;
+        border-radius: 30px;
+        background: linear-gradient(45deg, #00c6ff, #0072ff);
+        color: white;
+        text-decoration: none;
+        box-shadow: 0 0 10px #00c6ff, 0 0 20px #0072ff;
+        transition: all 0.4s ease-in-out;
+        display: inline-block;
+      "
+      onmouseover="this.style.background='linear-gradient(45deg, #ff00cc, #333399)'"
+      onmouseout="this.style.background='linear-gradient(45deg, #00c6ff, #0072ff)'"
+      >
+        🔮 Enter the Future
+      </a>
+
+    </div>
+
+    <style>
+      @keyframes spaceAnimation {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+    </style>
+    
+  </body>
+</html>
